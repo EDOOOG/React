@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
 import axios from "axios"
-import { data } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export default function List() {
@@ -19,6 +19,9 @@ export default function List() {
     return (
         <>
             <h2>List Fakultas</h2>
+            <NavLink> to="/fakultas/create" className="btn btn-primary mb-3"
+                create
+            </NavLink>
             <table className="table">
                 <thead>
                     <tr>
